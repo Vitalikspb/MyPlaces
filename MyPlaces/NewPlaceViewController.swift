@@ -128,6 +128,13 @@ class NewPlaceViewController: UITableViewController {
         
     }
     
+        //MARK: - Prepare for sender
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier != "ShowMap" { return }
+        let mapVC = segue.destination as! MapViewController
+        mapVC.place = currentPlace
+    }
+    
     private func setupNavigationBar() {
         
         //hide text in back button on detail screen
@@ -145,6 +152,8 @@ class NewPlaceViewController: UITableViewController {
     }
     
 }
+
+
 
     //MARK: Work with image
 
@@ -191,3 +200,5 @@ extension NewPlaceViewController: UITextFieldDelegate {
         }
     }
 }
+
+
