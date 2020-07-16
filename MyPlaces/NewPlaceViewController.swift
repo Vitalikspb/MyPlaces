@@ -77,14 +77,7 @@ class NewPlaceViewController: UITableViewController {
     
     func savePlace() {
         
-        
-        var image: UIImage?
-        
-        if imageIsChanged {
-            image = placeImage.image
-        } else {
-            image = #imageLiteral(resourceName: "imagePlaceholder")
-        }
+        let image = imageIsChanged ? placeImage.image : #imageLiteral(resourceName: "imagePlaceholder")
         
         let imageData = image?.pngData()
     
@@ -128,11 +121,23 @@ class NewPlaceViewController: UITableViewController {
         
     }
     
-        //MARK: - Prepare for sender
+        //MARK: - Prepare for segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier != "ShowMap" { return }
-        let mapVC = segue.destination as! MapViewController
-        mapVC.place = currentPlace
+        
+        guard let identifier = segue.identifier,
+            let mapVC = segue.destination as? MapViewController else { return }
+        
+        mapVC.incomeSegueIdentifier = identifier
+        mapVC.mapViewControllerDelegate = self
+        if identifier == "ShowPlace" {
+            mapVC.place.name = placeName.text!
+            mapVC.place.location = placeLocation.text
+            mapVC.place.type = placeType.text
+            mapVC.place.imageData = placeImage.image?.pngData()
+        }
+  
+        
+        
     }
     
     private func setupNavigationBar() {
@@ -199,6 +204,14 @@ extension NewPlaceViewController: UITextFieldDelegate {
             saveButton.isEnabled = false
         }
     }
+}
+
+extension NewPlaceViewController: MapViewControllerDelegate {
+    
+    func getAddress(_ address: String?) {
+        placeLocation.text = address
+    }
+    
 }
 
 

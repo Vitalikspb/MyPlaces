@@ -55,6 +55,8 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) photo use</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Для того чтобы проложить маршрут или определения адреса</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
