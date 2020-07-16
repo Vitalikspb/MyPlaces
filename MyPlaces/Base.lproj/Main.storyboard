@@ -262,6 +262,23 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="140" id="MW5-Cd-LCB">
+                                        <rect key="frame" x="0.0" y="503" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MW5-Cd-LCB" id="ppG-Fb-NnL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="252" placeholderIntrinsicHeight="44" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Dri-8K-nU2" customClass="RatingControl" customModule="MyPlaces" customModuleProvider="target">
+                                                    <rect key="frame" x="81" y="48" width="252" height="44"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Dri-8K-nU2" firstAttribute="centerY" secondItem="ppG-Fb-NnL" secondAttribute="centerY" id="1FB-l9-sQt"/>
+                                                <constraint firstItem="Dri-8K-nU2" firstAttribute="centerX" secondItem="ppG-Fb-NnL" secondAttribute="centerX" id="v1H-W2-fgs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>

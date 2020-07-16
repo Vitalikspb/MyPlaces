@@ -17,6 +17,7 @@
 		FA5C401C24BEFEE90041B052 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C401B24BEFEE90041B052 /* CustomTableViewCell.swift */; };
 		FA5C401E24BF07B00041B052 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C401D24BF07B00041B052 /* PlaceModel.swift */; };
 		FA5C402024BF11F40041B052 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5C401F24BF11F40041B052 /* NewPlaceViewController.swift */; };
+		FA9B22B824C03ED200CBDDDB /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B22B724C03ED200CBDDDB /* RatingControl.swift */; };
 		FAB6DF8824BF50EC0056FAF6 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6DF8724BF50EC0056FAF6 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		FA5C401B24BEFEE90041B052 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FA5C401D24BF07B00041B052 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		FA5C401F24BF11F40041B052 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
+		FA9B22B724C03ED200CBDDDB /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		FAB6DF8724BF50EC0056FAF6 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 			children = (
 				FA5C400524BEDC160041B052 /* AppDelegate.swift */,
 				FA5C401924BEF0280041B052 /* MainViewController.swift */,
+				FA9B22B724C03ED200CBDDDB /* RatingControl.swift */,
 				FA5C401F24BF11F40041B052 /* NewPlaceViewController.swift */,
 				FA5C401B24BEFEE90041B052 /* CustomTableViewCell.swift */,
 				FA5C400724BEDC160041B052 /* SceneDelegate.swift */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5C401A24BEF0280041B052 /* MainViewController.swift in Sources */,
+				FA9B22B824C03ED200CBDDDB /* RatingControl.swift in Sources */,
 				FA5C402024BF11F40041B052 /* NewPlaceViewController.swift in Sources */,
 				FA5C400624BEDC160041B052 /* AppDelegate.swift in Sources */,
 				FAB6DF8824BF50EC0056FAF6 /* StorageManager.swift in Sources */,
