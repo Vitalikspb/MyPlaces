@@ -6,5 +6,8 @@ target 'MyPlaces' do
   use_frameworks!
 
   pod 'RealmSwift'
+  use_frameworks!
+target 'MyPlaces'
+pod 'Cosmos', '~> 22.1
 
 end
