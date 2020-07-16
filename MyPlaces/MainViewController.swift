@@ -15,6 +15,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var reversedSortingButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
+    
     private var places: Results<Place>!
     private var ascendingSorting = true
     private let searchController = UISearchController(searchResultsController: nil)
